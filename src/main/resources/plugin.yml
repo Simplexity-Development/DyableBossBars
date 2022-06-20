@@ -1,0 +1,9 @@
+name: DyableBossBars
+version: '${project.version}'
+main: adhdmc.dyablebossbars.DyableBossBars
+api-version: 1.19
+authors: [ _Rhtyhmic ]
+description: Dye Boss Bars!
+permissions:
+  bossbars.dye:
+    description: Allow the player to dye bossbars
