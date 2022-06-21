@@ -6,13 +6,14 @@ import org.bukkit.boss.BarColor;
 import org.bukkit.entity.Boss;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
 public class LoadEvent implements Listener {
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.NORMAL,ignoreCancelled = true)
     //TY Billy for the help w/ this <3
     public void onBossLoad(EntityAddToWorldEvent event) {
         Entity entity = event.getEntity();
