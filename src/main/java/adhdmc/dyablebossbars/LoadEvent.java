@@ -14,7 +14,7 @@ import org.bukkit.persistence.PersistentDataType;
 public class LoadEvent implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL,ignoreCancelled = true)
-    //TY Billy for the help w/ this <3
+    //TY @BillyGalbreath for the help w/ this <3
     public void onBossLoad(EntityAddToWorldEvent event) {
         Entity entity = event.getEntity();
         if (!(entity instanceof Boss)) {

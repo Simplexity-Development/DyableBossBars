@@ -2,8 +2,30 @@ name: DyableBossBars
 version: '${project.version}'
 main: adhdmc.dyablebossbars.DyableBossBars
 api-version: 1.14
-authors: [ _Rhtyhmic ]
-description: Dye Boss Bars!
+authors: [_Rhtyhmic]
+description: Dye Boss Bars different colors! https://github.com/RhythmicSys/DyableBossBars
 permissions:
-  bossbars.dye:
+  dyablebossbars.dye:
     description: Allow the player to dye bossbars
+    default: op
+  dyablebossbars.dye.red:
+    description: Allow player to dye bossbars red
+    default: op
+  dyablebossbars.dye.yellow:
+    description: Allow player to dye bossbars yellow
+    default: op
+  dyablebossbars.dye.green:
+    description: Allow player to dye bossbars green
+    default: op
+  dyablebossbars.dye.blue:
+    description: Allow player to dye bossbars blue
+    default: op
+  dyablebossbars.dye.purple:
+    description: Allow player to dye bossbars purple
+    default: op
+  dyablebossbars.dye.pink:
+    description: Allow player to dye bossbars pink
+    default: op
+  dyablebossbars.dye.white:
+    description: Allow player to dye bossbars white
+    default: op

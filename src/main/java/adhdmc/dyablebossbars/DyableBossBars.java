@@ -12,8 +12,10 @@ public final class DyableBossBars extends JavaPlugin {
         plugin = this;
         try {
             Class.forName("com.destroystokyo.paper.event.entity.EntityAddToWorldEvent");
+            Class.forName("net.kyori.adventure.text.minimessage.MiniMessage");
+            Class.forName("com.destroystokyo.paper.MaterialTags");
         } catch (ClassNotFoundException e) {
-            Bukkit.getConsoleSender().sendMessage(ChatColor.DARK_RED + "This plugin depends on methods that are not present on your server. Sorry for the inconvenience");
+            this.getLogger().severe("[DYABLE BOSSBARS] This plugin depends on methods that are not present on your server. Plugin disabling.");
             getServer().getPluginManager().disablePlugin(DyableBossBars.plugin);
             return;
         }
