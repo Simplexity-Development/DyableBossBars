@@ -28,7 +28,7 @@ public class DyeEvent implements Listener {
         if(!(event.getRightClicked() instanceof Boss)){
             return;
         }
-        if(!(event.getPlayer().hasPermission("dyablebossbars.dye"))){
+        if(!(event.getPlayer().hasPermission("dyablebossbars.use"))){
             return;
         }
         Player player = event.getPlayer();

@@ -5,8 +5,8 @@ api-version: 1.14
 authors: [_Rhtyhmic]
 description: Dye Boss Bars different colors! https://github.com/RhythmicSys/DyableBossBars
 permissions:
-  dyablebossbars.dye:
-    description: Allow the player to dye bossbars
+  dyablebossbars.use:
+    description: Allow the player to use DyableBossbars functionality
     default: op
   dyablebossbars.dye.red:
     description: Allow player to dye bossbars red
