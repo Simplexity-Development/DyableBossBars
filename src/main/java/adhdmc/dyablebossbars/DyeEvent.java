@@ -22,13 +22,10 @@ public class DyeEvent implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL,ignoreCancelled = true)
         public void onBossInteract(PlayerInteractEntityEvent event){
-        if (event.getHand().equals(EquipmentSlot.OFF_HAND)){
+        if (event.getHand().equals(EquipmentSlot.OFF_HAND)) {
             return;
         }
-        if(!(event.getRightClicked() instanceof Boss)){
-            return;
-        }
-        if(!(event.getPlayer().hasPermission("dyablebossbars.use"))){
+        if (!(event.getRightClicked() instanceof Boss)) {
             return;
         }
         Player player = event.getPlayer();
@@ -46,7 +43,7 @@ public class DyeEvent implements Listener {
         } catch (IllegalArgumentException e) {
             return;
         }
-        if(!player.hasPermission("dyablebossbars.dye."+bossBarColor.toLowerCase(Locale.ENGLISH))) {
+        if (!player.hasPermission("dyablebossbars.dye."+bossBarColor.toLowerCase(Locale.ENGLISH))) {
             player.sendMessage(mM.deserialize("<red>You do not have permission to dye bossbars " + bossBarColor.toLowerCase(Locale.ENGLISH)));
             return;
         }
