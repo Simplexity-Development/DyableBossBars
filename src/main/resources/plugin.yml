@@ -26,3 +26,14 @@ permissions:
   dyablebossbars.dye.white:
     description: Allow player to dye bossbars white
     default: op
+  dyablebossbars.dye.*:
+    description: Allow player to dye bossbars any color
+    default: op
+    children:
+      dyablebossbars.dye.red: true
+      dyablebossbars.dye.yellow: true
+      dyablebossbars.dye.green: true
+      dyablebossbars.dye.blue: true
+      dyablebossbars.dye.purple: true
+      dyablebossbars.dye.pink: true
+      dyablebossbars.dye.white: true
