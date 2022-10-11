@@ -8,7 +8,7 @@
 
 This plugin makes it easy to dye bossbars!<br>
 People often like to put up withers and name them cool things, now they can dye them too.<br>
-To dye a bossbar, right click the boss with the color you want to dye it
+To dye a bossbar, right click the boss with the color you want to dye it.
 
 ## Dyable colors:
 - **Red**
