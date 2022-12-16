@@ -1,7 +1,7 @@
 name: DyableBossBars
 version: '${project.version}'
 main: adhdmc.dyablebossbars.DyableBossBars
-api-version: 1.14
+api-version: 1.18
 authors: [_Rhtyhmic]
 description: Dye Boss Bars different colors! https://github.com/RhythmicSys/DyableBossBars
 permissions:
