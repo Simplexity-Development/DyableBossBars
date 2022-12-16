@@ -1,5 +1,7 @@
 package adhdmc.dyablebossbars;
 
+import adhdmc.dyablebossbars.listeners.EntityAddToWorldEventListener;
+import adhdmc.dyablebossbars.listeners.InteractEventListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class DyableBossBars extends JavaPlugin {
@@ -17,7 +19,7 @@ public final class DyableBossBars extends JavaPlugin {
             getServer().getPluginManager().disablePlugin(DyableBossBars.plugin);
             return;
         }
-        getServer().getPluginManager().registerEvents(new DyeEvent(), this);
-        getServer().getPluginManager().registerEvents(new LoadEvent(), this);
+        getServer().getPluginManager().registerEvents(new InteractEventListener(), this);
+        getServer().getPluginManager().registerEvents(new EntityAddToWorldEventListener(), this);
     }
 }

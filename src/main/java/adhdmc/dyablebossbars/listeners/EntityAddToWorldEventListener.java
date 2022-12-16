@@ -1,7 +1,6 @@
-package adhdmc.dyablebossbars;
+package adhdmc.dyablebossbars.listeners;
 
 import com.destroystokyo.paper.event.entity.EntityAddToWorldEvent;
-import org.bukkit.NamespacedKey;
 import org.bukkit.boss.BarColor;
 import org.bukkit.entity.Boss;
 import org.bukkit.entity.Entity;
@@ -11,7 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
-public class LoadEvent implements Listener {
+public class EntityAddToWorldEventListener implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL,ignoreCancelled = true)
     //TY @BillyGalbreath for the help w/ this <3
@@ -22,10 +21,10 @@ public class LoadEvent implements Listener {
         }
         Boss boss = (Boss) event.getEntity();
         PersistentDataContainer pdc = boss.getPersistentDataContainer();
-        if (!pdc.has(new NamespacedKey(DyableBossBars.plugin, "changed_color"), PersistentDataType.STRING)){
+        if (!pdc.has(InteractEventListener.bossbarColor, PersistentDataType.STRING)){
             return;
         }
-        String color = pdc.get(new NamespacedKey(DyableBossBars.plugin, "changed_color"), PersistentDataType.STRING);
+        String color = pdc.get(InteractEventListener.bossbarColor, PersistentDataType.STRING);
         boss.getBossBar().setColor(BarColor.valueOf(color));
     }
 }
